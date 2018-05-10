@@ -37,11 +37,11 @@ int PlayerPopularity = ( rand () % 100 + 1 ) ;
 
 
  // Showing the player their values
-std::cout << "(1) Your Intelligence: " << PlayerIntelligence << "\n";
+std::cout << "---------------" << "\n" << "(1) Your Intelligence: " << PlayerIntelligence << "\n";
 std::cout << "(2) Your Strength: " << PlayerStrength << "\n";
 std::cout << "(3) Your Speed: " << PlayerSpeed << "\n";
 std::cout << "(4) Your Popularity: " << PlayerPopularity << "\n";
-std::cout << "\n";
+std::cout << "---------------" << "\n";
 
  // Asking the player for their choice of values
 int PlayerChoice;
@@ -72,7 +72,7 @@ if ( PlayerValue > CompValue ) {
   CompCards = (CompCards - 1);
 };
 if ( PlayerValue < CompValue ){
-  std:: cout << "Sorry, but the computer's value is higher and you lost. Better luck next time!" << "\n";
+  std:: cout << "Sorry, but the computer's value is higher and you lost. Better luck next time!" << "\n" << "---------------" << "\n";
   losses = (losses + 1);
   cards = (cards - 1);
   CompCards = (CompCards + 1);
@@ -92,7 +92,7 @@ PlayerPopularity = ( rand () % 100 + 1 ) ;
 
 
  // Showing the player their new values
-std::cout << "Your Intelligence: " << PlayerIntelligence << "\n";
+std::cout << "---------------" << "\n" << "Your Intelligence: " << PlayerIntelligence << "\n";
 std::cout << "Your Strength: " << PlayerStrength << "\n";
 std::cout << "Your Speed: " << PlayerSpeed << "\n";
 std::cout << "Your Popularity: " << PlayerPopularity << "\n";
