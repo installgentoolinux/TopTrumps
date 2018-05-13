@@ -18,12 +18,10 @@
 #include <stdio.h>
 #include <unistd.h>
 int main() {
-int wins;
-int losses;
-int cards;
-int CompCards;
-cards = 10;
-CompCards = 10;
+int wins = 0;
+int losses = 0;
+int cards = 10;
+int CompCards = 10;
 while ((cards > 1) && (CompCards > 1)){
   // Defining player values with a random number seeded from Unix Time + a number (1001 to 1004)
 srand( (int) time(0) + 1001);
