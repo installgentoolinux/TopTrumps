@@ -51,7 +51,7 @@ if ( PlayerChoice > 4) {
   std::cout << "\n" << "Please enter a number lower than 4 that correlates to the number next to the trait you wish to select" << "\n";
   std::cin >> PlayerChoice;
 };
-
+std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 // Setting the Player's choice as the value they chose
 int PlayerValue;
 if ( PlayerChoice == 1 ) {PlayerValue = PlayerIntelligence;};
@@ -67,19 +67,24 @@ std::cout << "The Computer's value: " << CompValue << "\n";
 
 if ( PlayerValue > CompValue ) {
   std::cout << "Hooray, You won! Now it's the computer's turn to choose!" << "\n";
+  sleep(2);
   wins = (wins + 1);
   cards = (cards + 1);
   CompCards = (CompCards - 1);
 };
 if ( PlayerValue < CompValue ){
   std:: cout << "Sorry, but the computer's value is higher and you lost. Better luck next time!" << "\n" << "---------------" << "\n";
+  sleep(2);
   losses = (losses + 1);
   cards = (cards - 1);
   CompCards = (CompCards + 1);
 };
+sleep(5);
+std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" << "---------------";
 std::cout << "\n" << "Scores: " << "\n" << "You: " << wins << " Computer: " << losses << "\n" ;
 std::cout << "\n" << "Your cards left: " << cards  << "\n" << "Computer's cards left: " << CompCards << "\n" << "\n";
-sleep(2);
+sleep(5);
+std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
   // Redefining player values with a random number seeded from Unix Time + a number (1001 to 1004)
 srand( (int) time(0) + 1001);
 PlayerIntelligence = ( rand () % 100 + 1 ) ;
@@ -97,7 +102,8 @@ std::cout << "Your Strength: " << PlayerStrength << "\n";
 std::cout << "Your Speed: " << PlayerSpeed << "\n";
 std::cout << "Your Popularity: " << PlayerPopularity << "\n";
 std::cout << "\n";
-sleep(2);
+sleep(5);
+
 // Getting the computer to "choose it's value"
 srand( (int) time(0) + 1006 );
 CompValue = ( rand () % 100 + 1 ) ;
@@ -121,7 +127,9 @@ if (CompTrait == 4) {
   std::cout << "Computer's chosen trait: Popularity" << "\n" ;
   PlayerChoice = 4;
 };
+
 std::cout << "The Computer's value: " << CompValue << "\n";
+sleep(1);
 if ( PlayerChoice == 1 ) {PlayerValue = PlayerIntelligence;};
 if ( PlayerChoice == 2 ) {PlayerValue = PlayerStrength;};
 if ( PlayerChoice == 3 ) {PlayerValue = PlayerSpeed;};
@@ -140,10 +148,14 @@ if ( PlayerValue < CompValue ){
   cards = (cards - 1);
   CompCards = (CompCards + 1);
 };
+sleep (5);
+std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 // Scoreboard
 std::cout << "\n" << "Scores: " << "\n" << "You: " << wins << " Computer: " << losses << "\n" ;
 std::cout << "\n" << "Your cards left: " << cards  << "\n" << "Computer's cards left: " << CompCards << "\n" << "\n";
-sleep(2);
+sleep(5);
+std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+  
 }
 // Telling the player if they won or lost
 if (cards == 0) {std::cout << "Sorry, you ran out of cards and so you lost";};
