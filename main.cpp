@@ -43,7 +43,7 @@ int main() {
 
 		// Asking the player for their choice of values
 		int PlayerChoice;
-		std::cout << "Please enter a the number (1 to 4) correlating to the "
+		std::cout << "Please enter the number (1 to 4) correlating to the "
 					 "card's trait you wish to put up against the computer's "
 					 "cards"
 				  << "\n"
