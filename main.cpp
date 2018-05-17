@@ -53,6 +53,15 @@ int main() {
 			std::cout << "\n"
 					  << "Please enter a number lower than 4 that correlates "
 						 "to the number next to the trait you wish to select"
+				      << "\n EG: 1 for Intelligence"
+					  << "\n";
+			std::cin >> PlayerChoice;
+		};
+		if (PlayerChoice < 1) {
+			std::cout << "\n"
+					  << "Please enter a number 1-4 that correlates "
+						 "to the number next to the trait you wish to select"
+					  << "\n EG: 1 for Intelligence"
 					  << "\n";
 			std::cin >> PlayerChoice;
 		};
@@ -110,7 +119,7 @@ int main() {
 				  << "Your cards left: " << cards << "\n"
 				  << "Computer's cards left: " << CompCards << "\n"
 				  << "\n";
-		sleep(5);
+		sleep(3);
 		std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 					 "\n\n\n\n\n\n\n";
 		// Redefining player values with a random number seeded from Unix Time +
@@ -128,7 +137,7 @@ int main() {
 		std::cout << "Your Speed: " << PlayerSpeed << "\n";
 		std::cout << "Your Popularity: " << PlayerPopularity << "\n";
 		std::cout << "\n";
-		sleep(5);
+		sleep(3);
 
 		// Getting the computer to "choose it's value"
 		CompValue = (rand() % 100 + 1);
@@ -187,7 +196,7 @@ int main() {
 			cards = (cards - 1);
 			CompCards = (CompCards + 1);
 		};
-		sleep(5);
+		sleep(3);
 		std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 					 "\n\n\n\n\n\n\n";
 		// Scoreboard
